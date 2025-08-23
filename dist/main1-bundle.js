@@ -1384,7 +1384,7 @@ input.addEventListener("input", () => {
     text1.style.display = "none";
     text2.style.display = "block";
     div1.classList.add('div-1-active');
-    // input.disabled = true; 
+    input.disabled = true;
     input.value = ""; // supprime le texte de l’input
   }
 });
