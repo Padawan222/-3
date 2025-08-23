@@ -46,6 +46,7 @@ input {
   font-size: 2.5rem;
   font-family: var(--ff-title);
 }
+
 ::placeholder {
   color: white;
   text-align: center;
@@ -64,4 +65,27 @@ input {
   color: white;
   font-family: var(--ff-title);
   font-size: 5rem;
+}
+.text-3 {
+  color: white;
+  font-family: var(--ff-title);
+  font-size: 5rem;
+}
+.div-1 {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  opacity: 0;
+}
+.div-1-active {
+  opacity: 1;
+}
+.countdown {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
 }
