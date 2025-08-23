@@ -1368,9 +1368,15 @@ const opacity = document.querySelector('.opacity');
 const text1 = document.querySelector('.text-1');
 const text2 = document.querySelector('.text-2');
 const div1 = document.querySelector(".div-1");
+const countdown = document.querySelector(".countdown");
 
-// ✅ Tu peux ajouter autant de phrases que tu veux ici
+// ✅ Phrases valides
 const validPhrases1 = ["182 jours"];
+const validPhrases2 = [
+  // "test password"," Moi c'est toi", "moi c'est toi"
+];
+
+// Gestion des phrases 1
 input.addEventListener("input", () => {
   const value = input.value.trim().toLowerCase();
   if (validPhrases1.includes(value)) {
@@ -1378,12 +1384,11 @@ input.addEventListener("input", () => {
     text2.style.display = "block";
     div1.classList.add('div-1-active');
     input.disabled = true;
-    input.value = ""; // 🔥 supprime le texte de l’input
-  } else {}
+    input.value = ""; // supprime le texte de l’input
+  }
 });
-const validPhrases2 = [
-  // "test password"," Moi c'est toi", "moi c'est toi"
-];
+
+// Gestion des phrases 2
 input.addEventListener("input", () => {
   const value = input.value.trim().toLowerCase();
   if (validPhrases2.includes(value)) {
@@ -1396,14 +1401,16 @@ input.addEventListener("input", () => {
     containerBlur.classList.remove("no-blur");
   }
 });
-// Cible = 26 août 2025 à minuit
+
+// Compte à rebours vers 26 août 2025
 const targetDate = new Date("2025-08-26T00:00:00").getTime();
-const countdown = document.querySelector(".countdown");
-setInterval(() => {
+const interval = setInterval(() => {
   const now = new Date().getTime();
   const distance = targetDate - now;
   if (distance <= 0) {
-    countdown.innerHTML = "C'est fini 🎉";
+    countdown.innerHTML = "❤️✨❤️";
+    input.disabled = false; // 🔥 réactive l'input à la fin du chrono
+    clearInterval(interval);
     return;
   }
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
