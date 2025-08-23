@@ -43,24 +43,24 @@ input.addEventListener("input", () => {
   }
 });
 
-// // Compte à rebours vers 26 août 2025
-// const targetDate = new Date("2025-08-26T00:00:00").getTime();
+// Compte à rebours vers 26 août 2025
+const targetDate = new Date("2025-08-26T00:00:00").getTime();
 
-// const interval = setInterval(() => {
-//   const now = new Date().getTime();
-//   const distance = targetDate - now;
+const interval = setInterval(() => {
+  const now = new Date().getTime();
+  const distance = targetDate - now;
 
-//   if (distance <= 0) {
-//     countdown.innerHTML = "❤️✨❤️";
-//     input.disabled = false; // 🔥 réactive l'input à la fin du chrono
-//     clearInterval(interval);
-//     return;
-//   }
+  if (distance <= 0) {
+    countdown.innerHTML = "❤️✨❤️";
+    input.disabled = false; // 🔥 réactive l'input à la fin du chrono
+    clearInterval(interval);
+    return;
+  }
 
-//   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-//   countdown.innerHTML = `${days}j ${hours}h ${minutes}m ${seconds}s`;
-// }, 1000);
+  countdown.innerHTML = `${days}j ${hours}h ${minutes}m ${seconds}s`;
+}, 1000)
