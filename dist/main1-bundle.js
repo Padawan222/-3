@@ -638,6 +638,7 @@ input {
   color: white;
   font-family: var(--ff-title);
   font-size: 5rem;
+  text-align: center;
 }
 
 .text-2 {
@@ -645,12 +646,14 @@ input {
   color: white;
   font-family: var(--ff-title);
   font-size: 5rem;
+  text-align: center;
 }
 
 .text-3 {
   color: white;
   font-family: var(--ff-title);
   font-size: 5rem;
+  text-align: center;
 }
 
 .div-1 {
@@ -672,7 +675,7 @@ input {
   color: white;
   text-align: center;
   margin-top: 2rem;
-}`, "",{"version":3,"sources":["webpack://./src/index/index.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,WAAA;EACA,mDAAA;EACA,sBAAA;EACA,2BAAA;AACF;;AACA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,sBAAA;EACA,aAAA;EACA,8BAAA;AAEF;AAAE;EACE,mCAAA;EACA,8BAAA;AAEJ;;AACA;EACE,aAAA;AAEF;;AAAA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AAGF;;AADA;EACE,UAAA;EACA,iBAAA;AAIF;;AAFA;EACE,YAAA;EACA,gBAAA;EACA,gBAAA;EACA,kBAAA;EACA,iBAAA;EACA,mBAAA;EACA,YAAA;EACA,sBAAA;EACA,eAAA;EACA,aAAA;EACA,kBAAA;EACA,iBAAA;EACA,4BAAA;AAKF;;AAFA;EACE,YAAA;EACA,kBAAA;EACA,4BAAA;EACA,iBAAA;AAKF;;AAFA;EACE,YAAA;EACA,4BAAA;EACA,eAAA;AAKF;;AAFA;EACE,aAAA;EACA,YAAA;EACA,4BAAA;EACA,eAAA;AAKF;;AAHA;EACE,YAAA;EACA,4BAAA;EACA,eAAA;AAMF;;AAJA;EACE,aAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,UAAA;AAOF;;AALA;EACE,UAAA;AAQF;;AANA;EACE,eAAA;EACA,iBAAA;EACA,YAAA;EACA,kBAAA;EACA,gBAAA;AASF","sourcesContent":[".container-fond-decran {\n  height: 100vh;\n  width: auto;\n  background: url(../assets/images/img_2.jpeg);\n  background-size: cover;\n  background-position: bottom;\n}\n.container-blur {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  height: 100vh;\n  backdrop-filter: brightness(0);\n\n  &.no-blur {\n    transition: backdrop-filter 3s ease;\n    backdrop-filter: brightness(1);\n  }\n}\n.test-active {\n  display: none;\n}\n.opacity {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.opacity-active {\n  opacity: 0;\n  animation: all 1s;\n}\ninput {\n  height: 4rem;\n  background: none;\n  border-top: none;\n  border-right: none;\n  border-left: none;\n  border-color: white;\n  color: white;\n  padding: 0.3rem 0.5rem;\n  font-size: 1rem;\n  outline: none;\n  text-align: center;\n  font-size: 2.5rem;\n  font-family: var(--ff-title);\n}\n\n::placeholder {\n  color: white;\n  text-align: center;\n  font-family: var(--ff-title);\n  font-size: 2.5rem;\n}\n\n.text-1 {\n  color: white;\n  font-family: var(--ff-title);\n  font-size: 5rem;\n}\n\n.text-2 {\n  display: none;\n  color: white;\n  font-family: var(--ff-title);\n  font-size: 5rem;\n}\n.text-3 {\n  color: white;\n  font-family: var(--ff-title);\n  font-size: 5rem;\n}\n.div-1 {\n  height: 10rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 2rem;\n  opacity: 0;\n}\n.div-1-active {\n  opacity: 1;\n}\n.countdown {\n  font-size: 2rem;\n  font-weight: bold;\n  color: white;\n  text-align: center;\n  margin-top: 2rem;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/index/index.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,WAAA;EACA,mDAAA;EACA,sBAAA;EACA,2BAAA;AACF;;AACA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,sBAAA;EACA,aAAA;EACA,8BAAA;AAEF;AAAE;EACE,mCAAA;EACA,8BAAA;AAEJ;;AACA;EACE,aAAA;AAEF;;AAAA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AAGF;;AADA;EACE,UAAA;EACA,iBAAA;AAIF;;AAFA;EACE,YAAA;EACA,gBAAA;EACA,gBAAA;EACA,kBAAA;EACA,iBAAA;EACA,mBAAA;EACA,YAAA;EACA,sBAAA;EACA,eAAA;EACA,aAAA;EACA,kBAAA;EACA,iBAAA;EACA,4BAAA;AAKF;;AAFA;EACE,YAAA;EACA,kBAAA;EACA,4BAAA;EACA,iBAAA;AAKF;;AAFA;EACE,YAAA;EACA,4BAAA;EACA,eAAA;EACA,kBAAA;AAKF;;AAFA;EACE,aAAA;EACA,YAAA;EACA,4BAAA;EACA,eAAA;EACA,kBAAA;AAKF;;AAHA;EACE,YAAA;EACA,4BAAA;EACA,eAAA;EACA,kBAAA;AAMF;;AAJA;EACE,aAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,UAAA;AAOF;;AALA;EACE,UAAA;AAQF;;AANA;EACE,eAAA;EACA,iBAAA;EACA,YAAA;EACA,kBAAA;EACA,gBAAA;AASF","sourcesContent":[".container-fond-decran {\n  height: 100vh;\n  width: auto;\n  background: url(../assets/images/img_2.jpeg);\n  background-size: cover;\n  background-position: bottom;\n}\n.container-blur {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  height: 100vh;\n  backdrop-filter: brightness(0);\n\n  &.no-blur {\n    transition: backdrop-filter 3s ease;\n    backdrop-filter: brightness(1);\n  }\n}\n.test-active {\n  display: none;\n}\n.opacity {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.opacity-active {\n  opacity: 0;\n  animation: all 1s;\n}\ninput {\n  height: 4rem;\n  background: none;\n  border-top: none;\n  border-right: none;\n  border-left: none;\n  border-color: white;\n  color: white;\n  padding: 0.3rem 0.5rem;\n  font-size: 1rem;\n  outline: none;\n  text-align: center;\n  font-size: 2.5rem;\n  font-family: var(--ff-title);\n}\n\n::placeholder {\n  color: white;\n  text-align: center;\n  font-family: var(--ff-title);\n  font-size: 2.5rem;\n}\n\n.text-1 {\n  color: white;\n  font-family: var(--ff-title);\n  font-size: 5rem;\n  text-align: center;\n}\n\n.text-2 {\n  display: none;\n  color: white;\n  font-family: var(--ff-title);\n  font-size: 5rem;\n  text-align: center;\n}\n.text-3 {\n  color: white;\n  font-family: var(--ff-title);\n  font-size: 5rem;\n  text-align: center;\n}\n.div-1 {\n  height: 10rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 2rem;\n  opacity: 0;\n}\n.div-1-active {\n  opacity: 1;\n}\n.countdown {\n  font-size: 2rem;\n  font-weight: bold;\n  color: white;\n  text-align: center;\n  margin-top: 2rem;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1372,9 +1375,7 @@ const countdown = document.querySelector(".countdown");
 
 // ✅ Phrases valides
 const validPhrases1 = ["182 jours"];
-const validPhrases2 = [
-  // "test password"," Moi c'est toi", "moi c'est toi"
-];
+const validPhrases2 = ["test password", " Moi c'est toi", "moi c'est toi"];
 
 // Gestion des phrases 1
 input.addEventListener("input", () => {
@@ -1383,7 +1384,7 @@ input.addEventListener("input", () => {
     text1.style.display = "none";
     text2.style.display = "block";
     div1.classList.add('div-1-active');
-    input.disabled = true;
+    // input.disabled = true; 
     input.value = ""; // supprime le texte de l’input
   }
 });
@@ -1402,23 +1403,27 @@ input.addEventListener("input", () => {
   }
 });
 
-// Compte à rebours vers 26 août 2025
-const targetDate = new Date("2025-08-26T00:00:00").getTime();
-const interval = setInterval(() => {
-  const now = new Date().getTime();
-  const distance = targetDate - now;
-  if (distance <= 0) {
-    countdown.innerHTML = "❤️✨❤️";
-    input.disabled = false; // 🔥 réactive l'input à la fin du chrono
-    clearInterval(interval);
-    return;
-  }
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-  const minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
-  const seconds = Math.floor(distance % (1000 * 60) / 1000);
-  countdown.innerHTML = `${days}j ${hours}h ${minutes}m ${seconds}s`;
-}, 1000);
+// // Compte à rebours vers 26 août 2025
+// const targetDate = new Date("2025-08-26T00:00:00").getTime();
+
+// const interval = setInterval(() => {
+//   const now = new Date().getTime();
+//   const distance = targetDate - now;
+
+//   if (distance <= 0) {
+//     countdown.innerHTML = "❤️✨❤️";
+//     input.disabled = false; // 🔥 réactive l'input à la fin du chrono
+//     clearInterval(interval);
+//     return;
+//   }
+
+//   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+//   countdown.innerHTML = `${days}j ${hours}h ${minutes}m ${seconds}s`;
+// }, 1000);
 })();
 
 /******/ })()
