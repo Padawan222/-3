@@ -1329,7 +1329,7 @@ const containerBlur = document.querySelector(".container-blur");
 const opacity = document.querySelector('.opacity');
 
 // ✅ Tu peux ajouter autant de phrases que tu veux ici
-const validPhrases = ["Moi c'est toi", "moi c'est toi"];
+const validPhrases = ["test password", " Moi c'est toi", "moi c'est toi"];
 input.addEventListener("input", () => {
   const value = input.value.trim().toLowerCase();
   if (validPhrases.includes(value)) {
