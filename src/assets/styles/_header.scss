@@ -1,0 +1,45 @@
+@use "media-queries" as *;
+header {
+  position: fixed;
+  top: 0;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  width: 100%;
+  animation: anim-start 6s;
+  z-index: 1000;
+  // background: var(--beige);
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+.header-active-1 {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  margin-top: 1rem;
+  color: #eee;
+  font-family: var(--ff-title);
+  font-weight: 200;
+  font-size: 4rem;
+}
+.img-header {
+  height: 6rem;
+  margin: 0 2rem;
+  @include xs {
+    margin: 0 1rem;
+  }
+}
+.container-logo-title {
+  display: flex;
+  animation: opacity 7s;
+  text-decoration: none;
+  animation: 3s logo-header;
+  @keyframes logo-header {
+    0% {
+      transform: translateX(-100%);
+    }
+  }
+}

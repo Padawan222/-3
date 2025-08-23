@@ -1,0 +1,98 @@
+@use "media-queries" as *;
+
+.header-container-background-none {
+  background: none;
+}
+.container-hc-text {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 2rem;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(1rem);
+  margin: 2rem;
+  animation: 3s hc-text;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 25rem;
+  @include xs {
+    margin-bottom: 2rem;
+  }
+  @include sm {
+    margin-bottom: 2rem;
+  }
+  @keyframes hc-text {
+    0% {
+      transform: scaleY(0%);
+    }
+    60% {
+      transform: scaleY(0%);
+    }
+  }
+}
+.container-hc-text-anim {
+  transition: all 1s;
+  opacity: 0;
+}
+.container-hc-text-anim-2 {
+  transition: all 1s;
+  opacity: 1;
+}
+h2 {
+  font-family: var(--ff-title);
+  font-weight: 200;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  color: rgb(255, 237, 237);
+  @include xs {
+    font-size: 4rem;
+  }
+}
+.fleche-header-container {
+  width: 5rem;
+  position: absolute;
+  bottom: 3rem;
+  left: calc(50% - 2.5rem);
+  color: white;
+  font-size: 4rem;
+  rotate: 180deg;
+  scroll-behavior: smooth;
+  animation: 3s fleche-hc;
+  &:hover {
+    transition: 2s;
+    color: var(--bordeaux);
+  }
+  @keyframes fleche-hc {
+    0% {
+      transform: translateY(-150%);
+    }
+  }
+}
+.fleche-header-container-anim {
+  transition: all 1s;
+  opacity: 0;
+}
+.fleche-header-container-anim-2 {
+  transition: all 1s;
+  opacity: 1;
+}
+.hc-text {
+  color: #eee;
+  font-size: 2rem;
+  @include xs {
+    font-size: 1.6rem;
+  }
+}
+// .container-link-hc {
+//   height: auto;
+//   width: 40%;
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .link-hc {
+//   height: auto;
+//   width: auto;
+//   text-decoration: none;
+//   color: #eee;
+//   backdrop-filter: blur(10rem);
+// }

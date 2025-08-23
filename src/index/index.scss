@@ -1,0 +1,56 @@
+.container-fond-decran {
+  height: 100vh;
+  width: auto;
+  background: url(../assets/images/img_2.jpeg);
+  background-size: cover;
+  background-position: bottom;
+}
+.container-blur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  backdrop-filter: brightness(0);
+
+  &.no-blur {
+    transition: backdrop-filter 3s ease;
+    backdrop-filter: brightness(1);
+  }
+}
+.test-active {
+  display: none;
+}
+.opacity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.opacity-active {
+  opacity: 0;
+  animation: all 1s;
+}
+input {
+  height: 3rem;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: white;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  text-align: center;
+  font-size: 1.2rem;
+}
+::placeholder {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.text-1 {
+  color: white;
+}
