@@ -10,7 +10,7 @@ const div1 = document.querySelector(".div-1");
 const countdown = document.querySelector(".countdown");
 
 // ✅ Phrases valides
-const validPhrases1 = ["260 640 minutes"];
+const validPhrases1 = ["182 jours"];
 const validPhrases2 = [
     "test password"," Moi c'est toi", "moi c'est toi"
 ];
