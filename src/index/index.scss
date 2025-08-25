@@ -1,9 +1,16 @@
-.container-fond-decran {
+body {
   height: 100vh;
-  width: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 1.6rem;
   background: url(../assets/images/img_2.jpeg);
   background-size: cover;
   background-position: bottom;
+  background-attachment: fixed;
 }
 .container-blur {
   display: flex;
@@ -11,6 +18,7 @@
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
   backdrop-filter: brightness(0);
 
   &.no-blur {
@@ -91,4 +99,40 @@ input {
   color: white;
   text-align: center;
   margin-top: 2rem;
+}
+
+.container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  padding: 1rem 2rem;
+  width: auto;
+  max-width: 80%;
+  backdrop-filter: blur(1rem);
+  border-radius: 3rem;
+  font-family: var(--ff-title);
+  color: white;
+  font-size: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.div-h1 {
+  animation: div-h1 2s linear;
+}
+
+@keyframes div-h1 {
+  0% {
+    opacity: 0%;
+  }
+}
+h3 {
+  font-size: 2rem;
+}
+.p-h3 {
+  width: 100%;
+  text-align: right;
 }

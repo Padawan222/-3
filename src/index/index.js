@@ -3,6 +3,7 @@ import "./index.scss";
 
 const input = document.querySelector(".container-blur input");
 const containerBlur = document.querySelector(".container-blur");
+const container = document.querySelector('.container')
 const opacity = document.querySelector('.opacity');
 const text1 = document.querySelector('.text-1');
 const text2 = document.querySelector('.text-2');
@@ -24,7 +25,7 @@ input.addEventListener("input", () => {
     text2.style.display = "block";
     div1.classList.add('div-1-active');
     input.disabled = true; 
-    input.value = ""; // supprime le texte de l’input
+    input.value = ""; 
   }
 });
 
@@ -35,7 +36,9 @@ input.addEventListener("input", () => {
   if (validPhrases2.includes(value)) {
     containerBlur.classList.add("no-blur");
     opacity.classList.add('opacity-active');
+    
     setTimeout(()=>{
+        container.style.display='flex'
         containerBlur.classList.add("test-active");
     },3000);
   } else {
@@ -52,7 +55,7 @@ const interval = setInterval(() => {
 
   if (distance <= 0) {
     countdown.innerHTML = "❤️✨❤️";
-    input.disabled = false; // 🔥 réactive l'input à la fin du chrono
+    input.disabled = false; 
     clearInterval(interval);
     return;
   }
